@@ -1,8 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sticky Navbar Example</title>
+  <style>
+    /* General Body Style */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      overflow: hidden;
+        background-color: #52f9f1;
+
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Ensures the navbar stays on top of other content */
+    }
+
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      display: block;
+      color: #d400ff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Change background on hover */
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    /* Main Content Styling */
+    .main {
+      padding: 18px;
+      margin-top: 60px; /* Increased to give more space for the fixed navbar */
+      height: 1500px; /* Example height for scrolling */
+    }
+
+    /* Responsive Navbar */
+    @media screen and (max-width: 600px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
 <body>
 
-<h1 style="color:rgb(244, 125, 246);">this is my page where i tell about my hobbies:D</h1>
+  <div class="navbar">
+    <a href="C:\Users\OMISTAJA\OneDrive\Työpöytä\coding\mkaju-blog\index.html">Home</a>
+    <a href="#">hobbys</a>
+    <a href="file:///C:/Users/OMISTAJA/OneDrive/Ty%C3%B6p%C3%B6yt%C3%A4/coding/mkaju-blog/favorite%20stuff.html">favorite stuff</a>
+ 
+  </div>
 
+  <div class="main">
 </body>
-</html>
+<body style="background-color: #696a6a;"></body>
